@@ -1,7 +1,11 @@
-name: "label new pull requests"
-description: "Add a label when a new pull request is opened"
-author: "Thapelo Masasa"
+name: "Hello"
 
-runs:
-  using: "node14"
-  main: "dist/index.js"
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
