@@ -2,6 +2,8 @@ name: "Hello"
 
 on:
   workflow_dispatch:
+  pull_request:
+    types: [openedl, reopened]
 
 jobs:
   hello:
@@ -9,3 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
+        with:
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+          label: "needs-review"
