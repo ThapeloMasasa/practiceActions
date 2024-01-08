@@ -1,0 +1,8 @@
+name: "Labelnew pull requests"
+description: "Add a label whena  new pull request is opened"
+author: :"Thapelo Masasa"
+
+
+runs:
+  using: "node14"
+  main: "dist/index.js"
