@@ -3,7 +3,7 @@ name: "Hello"
 on:
   workflow_dispatch:
   pull_request:
-    types: [openedl, reopened]
+    types: [opened, reopened]
 
 jobs:
   hello:
